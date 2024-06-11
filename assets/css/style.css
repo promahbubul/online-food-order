@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --black: #000;
+  --orange: #f48e28;
+  --lightOrange: #f5ddc4;
+  --silver: #b6b6b6;
+}
+
+/* Root */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* common class */
+.container {
+  max-width: 1240px;
+  margin: auto;
+}
+
+.section-heading {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 3px;
+  color: var(--orange);
+}
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 36px;
+  color: var(--black);
+}
+
+/* Navbar Section */
+.navbar {
+  max-width: 1240px;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .left {
+  width: 100%;
+}
+
+.navbar .left img {
+}
+
+.navbar .middle {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+
+  justify-content: center;
+}
+
+.navbar .right-side {
+  width: 100%;
+}
+
+.navbar .middle a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.navbar .right {
+  position: relative;
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .right .searchIcon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.navbar .right .divider {
+  position: absolute;
+  width: 2px;
+  height: 30px;
+  background-color: var(--black);
+  top: 50%;
+  transform: translateY(-50%);
+  right: 70px;
+}
+.navbar .right .cart {
+  position: absolute;
+  top: 30%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.navbar .right input {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--black);
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  padding-left: 60px;
+  outline: none;
+  box-shadow: -3px 3px 6px #adadad;
+  width: 100%;
+  /* width: w; */
+}
+
+.navbar .right input::placeholder {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--black);
+}
+
+/* Banner Section */
+.banner {
+  margin-top: 63px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 100px;
+  align-items: center;
+}
+
+.banner .left {
+  width: 60%;
+
+  position: relative;
+}
+
+.banner .left .arrow-absolute {
+  position: absolute;
+
+  bottom: 300px;
+  right: -120px;
+  width: 300px;
+}
+
+.banner .left h1 {
+  font-weight: 700;
+  color: var(--black);
+  font-size: 96px;
+  text-transform: uppercase;
+
+  /* max-width: 678px; */
+  margin-top: 84px;
+}
+.banner .left .active {
+  color: var(--orange);
+}
+.banner .left .motorgroup {
+  width: max-content;
+  padding: 8px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  background-color: var(--lightOrange);
+}
+
+.banner .left .content {
+  color: var(--black);
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 84px;
+}
+
+.banner .left .motorgroup p {
+  padding-left: 25px;
+  padding-right: 63px;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--orange);
+}
+
+.banner .left .button-group {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.banner .left .button-group .left {
+  padding: 27px 50px;
+  border-radius: 10px;
+  background: var(--orange);
+  border: none;
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+  width: max-content;
+  cursor: pointer;
+}
+
+.banner .left .button-group .play-button {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: center;
+  background: none;
+  border: none;
+  font-weight: 700;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.banner .left .motorgroup img {
+}
+
+.banner .right {
+  width: 40%;
+  height: max-content;
+
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 40px;
+}
+
+.banner .right .card {
+  text-align: center;
+  background-color: #fefefe;
+  padding: 30px 50px;
+  border-radius: 30px;
+
+  grid-column: span 6 / span 6;
+  height: max-content;
+  height: 250px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 90px;
+}
+
+.banner .right .card img {
+  position: absolute;
+  top: -140px;
+}
+
+.banner .right .card h2 {
+  font-size: 26px;
+  font-weight: bold;
+  color: black;
+}
+
+.banner .right .card p {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.banner .right .card .price {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Information Section */
+.information {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 134px;
+  border-radius: 50px;
+  padding: 28px;
+  align-items: center;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+}
+
+.information .item {
+  text-align: center;
+}
+
+.information .item img {
+}
+
+.information .item h4 {
+  font-weight: 600;
+  color: var(--black);
+  font-size: 18px;
+  margin-top: 12px;
+}
+
+.information .item p {
+  margin-top: 6px;
+  font-size: 13px;
+}
+
+.information .divider {
+  width: 1px;
+  height: 150px;
+  background-color: #b6b6b6;
+}
+
+/* Popular Item Section */
+.popular-item {
+  margin-top: 135px;
+}
+
+.popular-item .product-container {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 56px;
+}
+.popular-item .product-container .product {
+  grid-column: span 4 / span 4;
+  border-radius: 35px;
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.1);
+}
+.popular-item .product-container .product .product-img {
+  width: 100%;
+    border-radius: 35px 35px 0 0;
+}
+
+.popular-item .product-container .product .description {
+  padding: 16px 32px 44px 32px;
+}
+.popular-item .product-container .product .description .heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular-item .product-container .product .description .heading h2 {
+}
+
+.popular-item .product-container .product .description .heading div {
+}
+
+.popular-item .product-container .product .description .heading div img {
+}
+
+.popular-item .product-container .product .description .heading div span {
+}
+
+.popular-item .product-container .product .description .button-group {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular-item .product-container .product .description .button-group button {
+  background-color: var(--orange);
+  padding: 16px 29px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  font-size: 13px;
+}
+
+.popular-item .product-container .product .description .button-group p {
+}
+
+/* Why Choose Section */
+.why-chose {
+}
+
+/* Happy Client Section */
+.happy-client {
+}
+
+/* Newsletter Section */
+.news-letter {
+}
+
+/* Footer Section */
+.footer {
+}

@@ -507,9 +507,16 @@
 }
 
 .news-letter .right h2 {
+    font-size: 32px;
+    font-weight: 700;
 }
 
 .news-letter .right p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-align: justify;
+    font-weight: 500;
 }
 
 .news-letter .right div {

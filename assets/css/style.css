@@ -232,6 +232,7 @@
   background-color: #fefefe;
   padding: 30px 50px;
   border-radius: 30px;
+  box-shadow: 0px 0px 31px rgba(0, 0, 0, 0.05);
 
   grid-column: span 6 / span 6;
   height: max-content;
@@ -262,8 +263,8 @@
 }
 
 .banner .right .card .price {
-    font-size: 18px;
-    font-weight: 600;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 /* Information Section */
@@ -320,7 +321,7 @@
 }
 .popular-item .product-container .product .product-img {
   width: 100%;
-    border-radius: 35px 35px 0 0;
+  border-radius: 35px 35px 0 0;
 }
 
 .popular-item .product-container .product .description {
@@ -365,12 +366,74 @@
 .popular-item .product-container .product .description .button-group p {
 }
 
+.popular-item .more-product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--orange);
+  color: white;
+  padding: 26px 39px;
+  border-radius: 50px;
+  width: max-content;
+  margin: auto;
+  margin-top: 57px;
+  font-size: 18px;
+  gap: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
 /* Why Choose Section */
 .why-chose {
+  margin-top: 135px;
+}
+
+.why-chose .card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 54px;
+  margin-top: 54px;
+}
+
+.why-chose .card-container .card {
+  text-align: center;
+  border: 1px solid #b6b6b6;
+  border-radius: 35px;
+  padding: 103px 52px;
+  cursor: pointer;
+  transition: all ease-in-out 800;
+}
+
+.why-chose .card-container .card:hover {
+  border: none;
+  box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.15);
+  transition: all ease-in-out 800;
+}
+
+.why-chose .card-container .card-active {
+  border: none;
+  box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.15);
+}
+
+.why-chose .card-container .card img {
+}
+
+.why-chose .card-container .card h2 {
+  margin-top: 42px;
+  font-weight: bold;
+  font-size: 26px;
+}
+.why-chose .card-container .card p {
+  margin-top: 42px;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 /* Happy Client Section */
 .happy-client {
+  margin-top: 135px;
 }
 
 /* Newsletter Section */

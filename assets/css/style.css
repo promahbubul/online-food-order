@@ -483,8 +483,42 @@
 
 /* Newsletter Section */
 .news-letter {
+  background-color: black;
+  padding: 16px 106px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  margin-top: 135px;
+  border-radius: 35px;
 }
 
+.news-letter .left {
+  width: 50%;
+}
+
+.news-letter .left img {
+}
+
+.news-letter .right {
+  width: 50%;
+}
+
+.news-letter .right h2 {
+}
+
+.news-letter .right p {
+}
+
+.news-letter .right div {
+}
+
+.news-letter .right div input {
+}
+
+.news-letter .right div button {
+}
 /* Footer Section */
 .footer {
 }
